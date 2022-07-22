@@ -35,18 +35,19 @@
     
             <div class="form-inline">
     
-                <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
+                <button class="btn btn-outline-primary col-sm-3" id="previous" onclick="previous()">Previous</button>
     
-                <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
+                <button class="btn btn-outline-secondary col-sm-3" id="next" onclick="next()">Next</button>
             </div>
             <br/>
             <form class="form-inline">
                 <label class="lead mr-2 ml-2" for="month">Select Month: </label>
                 <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
                     <script>
-                        fetch('https://gist.githubusercontent.com/enriqueornelasjr/57cc380aa96a3e041e4886202c30e40c/raw/bccfbee870c0bff1ba04b35eb84f515923b8236b/Months.json')
+                        fetch('js/date.json')
                         .then(response => response.json())
-                        .then(data => {
+                        .then(data => { 
+                      
                             data.map(month => {
                                 document.getElementById('month').innerHTML += `<option value="${month.id}">${month.name}</option>`;
                             });
@@ -76,17 +77,25 @@
                 
             <label for="year"></label>Select Year:<select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
                 <script>
-                fetch('https://api.github.com/users/matthew-andrews/repos')
-                .then(response => response.json())
-                .then(data => {
-                    for(var i = 0; i < data.length; i++){
-                        var year = data[i].created_at.substring(0,4);
-                        var option = document.createElement("option");
-                        option.value = year;
-                        option.text = year;
-                        document.getElementById("year").appendChild(option);
-                    }
-                })
+                     fetch('js/year.json')
+                        .then(response => response.json())
+                        .then(data => { 
+                      
+                            data.map(year => {
+                                document.getElementById('year').innerHTML += `<option value="${year.id}">${year.name}</option>`;
+                            });
+                        });
+                // fetch('https://api.github.com/users/matthew-andrews/repos')
+                // .then(response => response.json())
+                // .then(data => {
+                //     for(var i = 0; i < data.length; i++){
+                //         var year = data[i].created_at.substring(0,4);
+                //         var option = document.createElement("option");
+                //         option.value = year;
+                //         option.text = year;
+                //         document.getElementById("year").appendChild(option);
+                //     }
+                // })
                 </script>
             <!-- <option value=1990>1990</option>
             <option value=1991>1991</option>
@@ -133,7 +142,7 @@
     </div>
 </div>
 <!--<button name="jump" onclick="jump()">Go</button>-->
-<script src="scripts.js"></script>
+<script src="js/script.js"></script>
 
 <!-- Optional JavaScript for bootstrap -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
