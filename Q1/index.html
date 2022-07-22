@@ -1,70 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Question-1</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/q1.js"></script>
-  </head>
-  <body>
-    <div class="container flex flex-col items-center mx-auto m-w-20">
-      <main class=" pt-4  mdb-docs-layout">
-        <div class="container  px-lg-5">
-             <div class="tab-content">
-                <div class="tab-pane fade in show active" id="docsTabsOverview" role="tabpanel">
-                    <div class="row">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8  p-5">
+                    <div class="card py-5 card_id mx-auto w-75" id="main_card">
+                        <!-- Auto generated Code starts -->
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img  src="https://picsum.photos/200" class="img-fluid d-none" id="img" />
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                            </a>
+                          </div>
+                          <div class="card-header  d-none" id="header">Featured</div>
+                          <div class="card-body">
+                            <h5 class="card-title d-none" id="title">Card title</h5>
+                            <p class="card-text d-none" id="text">
+                              Some quick example text to build on the card title and make up the bulk of the
+                              card's content.
+                            </p>
                         
-                        <div class=" col-md-12">
-                            <style>
-      blockquote {
-        margin-bottom: 0px!important;
-      }
-    </style>
-    <!-- Section: Content -->
-    <section class="">
-      <div id="app" data-v-app=""><div class="row"><div class="col-md-8 mb-4 mb-md-0"><section class="border p-4 d-flex justify-content-center mb-4 bg-light"><div class="card" style="width: 22rem;"><!----><!----><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content. </p><button type="button" class="btn btn-primary"> Button </button></div><!----></div></section><section id="section-generated-code" class="mb-4"><div class="docs-pills border mobile-hidden"><div class="d-flex justify-content-between py-2" style="padding-left: 0.6rem;"><ul class="nav nav-pills p-2"><li class="nav-item"><a class="nav-link  active show " data-mdb-toggle="tab" href="#mdb_17a657f68479f4035cb129bc63c5ae99bf298c15" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade  active show " id="mdb_17a657f68479f4035cb129bc63c5ae99bf298c15" role="tabpanel"><div class="code-toolbar"><pre class="grey lighten-3 mb-0 line-numbers  language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Card title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-            Some quick example text to build on the card title and make up the bulk of the
-            card's content.
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="btn-copy-code btn btn-dark btn-sm" data-mdb-ripple-color="dark" data-mdb-ripple-unbound="true">Copy</button></div></div></div></div></div></div></section>
-</div><div class="col-md-4 mb-4 mb-md-0"><div class="card"><div class="card-body px-4"><div class="text-center"><button type="button" class="btn btn-primary mb-4 me-2"> Reset </button><a class="btn btn-primary mb-4" href="https://mdbootstrap.com/docs/standard/components/cards/" role="button">Docs</a></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formTitle"><label class="form-check-label" for="formTitle"> Title </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formText"><label class="form-check-label" for="formText"> Text </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formButton"><label class="form-check-label" for="formButton"> Button </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formImage"><label class="form-check-label" for="formImage"> Image </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formHeader"><label class="form-check-label" for="formHeader"> Header </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formFooter"><label class="form-check-label" for="formFooter"> Footer </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formCenter"><label class="form-check-label" for="formCenter"> Center </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formBorder"><label class="form-check-label" for="formBorder"> Border </label></div><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="formTextWhite"><label class="form-check-label" for="formTextWhite"> White text </label></div><p class="text-center mb-2 mt-3"><strong>Custom color</strong></p><input type="color" class="form-control form-control-color w-100 mb-4" id="formColor" title="Choose your color" style="max-width: 100%; height: 40px;"></div></div></div></div></div>
-    </section>
-    <!-- Section: Content -->
-    
-                        </div>
-                        
-    
-                        
+                            <button type="button" class="btn btn-primary d-none text" id="button">Button</button>
+                          </div>
+                          <div class="card-footer d-none" id="footer">2 days ago</div>
+                        <!-- Auto generated Code ends -->
+
+                    </div>
+                    <div class="codes mt-5" id="">
+                        <pre>
+                            <code id="codes_container" style="overflow-y: socroll;">
+                                
+                            </code>
+                        </pre>
                     </div>
                 </div>
-    
-                
+                <div class="col-lg-4">
+                    <div class="card py-4">
+                        <div class="mx-auto">
+                            <button class="btn btn-primary" onclick="reset()">Reset</button>
+                            <button class="btn btn-primary">Docs</button>
+                        </div>
+                        <div class="p-5">
+                            <input type="checkbox" class="inputs" class="inputs" id="title_input" name="title_input" value="title_input">
+                            <label for="title_input">Title</label><br>
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="text_input" name="text_input" value="">
+                            <label for="text_input">Text</label><br>
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="button_input" name="button_input" value="">
+                            <label for="button_input">Button</label><br>
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="image_input" name="image_input" value="">
+                            <label for="image_input">Image</label><br>
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="header_input" name="header_input" value="">
+                            <label for="header_input">Header</label><br>
+
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="footer_input" name="footer_input" value="">
+                            <label for="footer_input">Footer</label><br>
+
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="center_input" name="footer_input" value="">
+                            <label for="center_input">center</label><br>
+
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="border_input" name="border_input" value="">
+                            <label for="border_input">Border</label><br>
+
+                            <input type="checkbox" class="inputs" onclick="magicAction" class="inputs" id="whiteText_input" name="whiteText_input" value="">
+                            <label for="whiteText_input">White Text</label><br>
+
+                            <h5 class="text-center mt-5">Custom Color</h5>
+                            <input class="w-100 inputs" type="color" name="color_input" id="color_input" value="#ffffff">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    </div>
-
-
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/q1.js"></script>
+</body>
 </html>

@@ -1,3 +1,5 @@
+let colorcalendar = document.getElementById("calendar")
+
 today = new Date();
 currentMonth = today.getMonth();
 currentYear = today.getFullYear();
@@ -14,15 +16,18 @@ function next() {
     currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
     currentMonth = (currentMonth + 1) % 12;
     showCalendar(currentMonth, currentYear);
+    colorcalendar.setAttribute("class", "table table-dark");
 }
 
 function previous() {
     currentYear = (currentMonth === 0) ? currentYear - 1 : currentYear;
     currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
     showCalendar(currentMonth, currentYear);
+    
+    colorcalendar.setAttribute("class", "table table-dark");
 }
 
-function jump() {
+function datepic() {
     currentYear = parseInt(selectYear.value);
     currentMonth = parseInt(selectMonth.value);
     showCalendar(currentMonth, currentYear);
@@ -32,9 +37,10 @@ function showCalendar(month, year) {
 
     let firstDay = (new Date(year, month)).getDay();
 
-    tbl = document.getElementById("calendar-body"); // body of the calendar
+    tbl = document.getElementById("cbody"); // body of the calendar
 
     // clearing all previous cells
+    // tbl.innerHTML = "";
     tbl.innerHTML = "";
 
     // filing data about month and in the page via DOM.
@@ -75,13 +81,27 @@ function showCalendar(month, year) {
         }
 
         tbl.appendChild(row); // appending each row into calendar body.
+        
     }
+
 
 }
 
 
-// check how many days in a month code from https://dzone.com/articles/determining-number-days-month
+// check how many days in a month code 
 function daysInMonth(iMonth, iYear) {
     return 32 - new Date(iYear, iMonth, 32).getDate();
 }
-        
+
+;
+
+// let buttonClick = document.getElementById("button");
+// let select = document.getElementById("select");
+
+
+// //    if click button color of calendar is changed
+//     buttonClick.addEventListener("click", function() {
+//         // colorcalendar.setAttribute("class", "table table-dark");
+//         // tbl.setAttribute('class','table table-dark');
+//     }
+//     );

@@ -1,5 +1,6 @@
 $(function() {
 
+    
     let url = "https://picsum.photos/v2/list?page=2&limit=100";
     let callType = "GET";
    var  $demo = $("#demo");
@@ -15,6 +16,8 @@ $(function() {
             '<img src="' + item.download_url + '" class="img-thumbnail rounded" alt="" height="100px" >' +
             '</div>' +
             '</div>'
+
+           
         );
      });
     },
