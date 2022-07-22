@@ -25,41 +25,41 @@
   <script src="js/AJAX.js" type="text/javascript"></script>
   <body>
     <div class="container px-2 py-2" >
-        <div class="row px-1 py-1" id="demo">
+        <!-- <div class="row px-1 py-1" id="demo">
 
-        </div> 
+        </div>  -->
+
+
+  <!-- Section: Images -->
+
+    <div class="row px-2 py-2" id="demo">
+      
+
+    </div>
+<!-- Section: Images -->
+
+  </div>
         
 
  
     </div>
     <script>
       $(function() {
+        let url = "https://picsum.photos/v2/list?page=2&limit=100";
        var  $demo = $("#demo");
        $ajax = $.ajax({
-        url: "https://picsum.photos/v2/list?page=2&limit=100",
+        url: url,
         method: "GET",
         dataType: "json",
         success: function(data) {
          $.each(data, function(i, item) {
             $demo.append(
                 
-                '<div class="col-md-4">' +
-                '<img src="' + item.download_url + '" class="img-fluid" alt="">' +
+                '<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">' +
+                '<img src="' + item.download_url + '" class="img-thumbnail rounded" alt="" height="100px" >' +
                 '</div>' +
                 '</div>'
             );
-             
-        //   $demo.append(
-        //     "<div class='card'><div class='card-body'><h5 class='card-title'>" +
-        //       item.name +
-        //       "</h5><p class='card-text'>" +
-        //       item.email +
-        //       "</p><p class='card-text'>" +
-        //       item.phone +
-        //       "</p><p class='card-text'>" +
-        //       item.website +
-        //       "</p></div></div>"
-        //   );
          });
         },
         error: function(error) {
